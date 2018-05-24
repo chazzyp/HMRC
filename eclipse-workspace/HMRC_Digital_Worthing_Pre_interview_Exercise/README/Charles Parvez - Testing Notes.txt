@@ -1,0 +1,29 @@
+I used Selenium Webdriver in Java for this exercise and the IDE used was Eclipse.
+I used a combination of approaches to write the steps:
+
+- Manual coding
+- Recorded code from Katalon IDE (Chrome extension)
+- Code snippets from online sources
+
+The tests required were:
+
+1. Create a new account 
+2. Login 
+3. Find the most expensive dress and add it to the cart 
+4. Log out and back in again, ensuring the dress is still in the cart 
+
+I started the exercise with a simple email generator to ensure that once the account was created,
+the email could be used for all the tests.
+This was very handy when building the single script to avoid log-in errors.
+
+I created a main method to drive the order of the tests. This also allowed me to produce a runnable jar file for a one command test run.
+The tests are in different methods, although I combined test 1 and 2 into its own.
+Each test has an Assert clause to check the result. This results is sent to the output on screen for review with a brief explanation of the fail.
+From running the tests, test 4 failed as the dress was not retained in the cart after log-out and log-in.
+The output is displayed in the CMD window along with the date/time of the test run.
+
+To run the test, type the following in the CMD window:
+
+java -jar Parvez_HMRC.jar
+
+NOTE: A video screen grab is provided to see it working.
